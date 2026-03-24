@@ -114,3 +114,14 @@ h1:after {
     background-color: #e0f0f0;
 
 }
+
+@media (width<950px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        justify-content: center;
+        margin: 5rem 0;
+        row-gap: 40px;
+    }
+
+}
