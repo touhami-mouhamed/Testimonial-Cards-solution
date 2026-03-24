@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-color: #00ad73;
+    --secondary-color: #b8eedb;
+    --main-text: #242828;
+    --secondary-text: #454d4d;
+    --third-text: #747878;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.total-container h1,
+h2 {
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+h1 {
+    position: relative;
+}
+
+h1:after {
+    position: absolute;
+    content: "";
+    width: 15%;
+    height: 2px;
+    background-color: #ffffff;
+    top: 120%;
+    left: 50%;
+    translate: -50% -150%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    margin: 5rem 0;
+    gap: 15px;
+}
+
+.section-container {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    background-color: azure;
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+.section-container h4 {
+    color: var(--main-text);
+    font-size: 22px;
+    margin: 10px;
+}
+
+.section-container h5 {
+    color: var(--secondary-text);
+    font-size: 18px;
+    margin: 10px;
+    font-weight: 500;
+}
+
+.section-container p {
+    text-align: start;
+    color: var(--third-text);
+    font-weight: 300;
+}
+
+.card-container {
+    position: relative;
+    display: grid;
+    grid-template-rows: 80px auto 180px 1fr;
+
+}
+
+.section-container img {
+    position: absolute;
+    width: 100px;
+    border-radius: 50%;
+    bottom: 90%;
+    left: 70%;
+}
+
+.section-container .ri-double-quotes-l {
+    color: var(--secondary-color);
+    font-size: 64px;
+}
+
+.section-container .main-quote {
+    position: absolute;
+    left: 0%;
+    bottom: 90%;
+}
+
+.section-container .small-quote {
+
+    font-size: 20px;
+    color: var(--main-text);
+}
+
+.rating {
+    align-self: flex-start;
+    color: gold;
+}
+
+.section-container:hover {
+    background-color: #e0f0f0;
+
+}
